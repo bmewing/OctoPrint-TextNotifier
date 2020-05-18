@@ -1,5 +1,5 @@
 $(function() {
-    function EmailNotifierModel(parameters) {
+    function TextNotifierModel(parameters) {
         var self = this;
 
         // pull information from the custom bindings call below
@@ -68,7 +68,7 @@ $(function() {
     };
 
     ADDITIONAL_VIEWMODELS.push([
-        EmailNotifierModel,
+        TextNotifierModel,
         ["loginStateViewModel", "settingsViewModel"],
         [document.getElementById("settings_plugin_emailnotifier")]
     ]);
